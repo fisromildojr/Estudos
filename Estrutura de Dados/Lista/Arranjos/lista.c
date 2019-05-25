@@ -24,10 +24,24 @@ void Inserir(TipoLista *Lista, TipoItem x){
 	}
 }
 
+void Remover(TipoLista *Lista, TipoItem *Item, TipoApontador p){
+	if(Vazia(Lista) || p > Lista->Fim){
+		printf("A posicao nao existe...\n");
+		return;
+	}else{
+		*Item = Lista->Item[p];
+		Lista->Fim--;
+		int i;
+		for(i=p; i < Lista->Fim ;i++){
+			Lista->Item[i] = Lista->Item[i+1];
+		}
+	}
+}
+
 void Imprimir(TipoLista Lista){
 	TipoElemento i;
 
 	for(i=0;i<Lista.Fim;i++){
-		printf("%d\n", Lista.Item[i].Elemento);
+		printf("[%d] = %d\n", i, Lista.Item[i].Elemento);
 	}
 }

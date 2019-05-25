@@ -16,6 +16,12 @@ int main(int argc, char const *argv[])
 		Inserir(&Lista, x);
 	}
 
+	printf("Antes de remover posicao [3]\n");
+	Imprimir(Lista);
+
+	Remover(&Lista, &x, 3);
+
+	printf("Depois de remover posicao [3]\n");
 	Imprimir(Lista);
 	
 	return 0;

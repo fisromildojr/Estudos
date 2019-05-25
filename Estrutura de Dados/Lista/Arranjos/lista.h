@@ -20,4 +20,6 @@ int Cheia(TipoLista *Lista);
 
 void Inserir(TipoLista *Lista, TipoItem x);
 
+void Remover(TipoLista *Lista, TipoItem *Item, TipoApontador p);
+
 void Imprimir(TipoLista Lista);
