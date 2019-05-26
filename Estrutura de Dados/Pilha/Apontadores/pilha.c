@@ -4,7 +4,7 @@
 
 void FPVazia(TipoPilha *Pilha){
 	Pilha->Topo = (TipoApontador) malloc(sizeof(TipoItem));
-	Pilha->Topo->Prox = -1;
+	Pilha->Topo->Prox = NULL;
 }
 
 int Vazia(TipoPilha Pilha){
