@@ -21,4 +21,6 @@ int Vazia(TipoLista Lista);
 
 void Inserir(TipoLista *Lista, TipoItem x);
 
+//void Remover(TipoLista *Lista, TipoItem *x, TipoApontador p);
+
 void Imprimir(TipoLista Lista);

@@ -18,11 +18,21 @@ int main(int argc, char const *argv[])
 	}
 
 	//Saída de dados
+//	printf("<<< Antes da Remocao >>>\n");
 	if(Vazia(Lista)){
 		printf("Lista vazia...\n");
 	}else{
 		Imprimir(Lista);
 	}
 
+	//Remover(&Lista, &x, p);
+/*
+	printf("<<< Depois da Remocao >>>\n");
+	if(Vazia(Lista)){
+		printf("Lista vazia...\n");
+	}else{
+		Imprimir(Lista);
+	}
+*/
 	return 0;
 }
